@@ -15,9 +15,14 @@ Installation
 4. Install OpenSSL (https://www.openssl.org/) and create self-signed certificate and key for https connection
 5. Put the key and certificate to the directory and change the name to localhost.pem and localhost-key.pem
 6. Change server.js:
+   ```
 	mongoose.connect('mongodb://<localhost/ipaddress>/mapdata') << this depends on your database setting (its connection ip and port)
+
 	var server = https.createServer(option, app).listen(8443,'<localhost/ipaddress>', () =>{
+   ```
    Change /db/index.js:
+   ```
 	const url = 'https://<localhost/ipaddress>:8443/'
-7. Run 'node server.js' in terminal
-8. Open https://<localhost/ipaddress>:8443/# to view the map.
+   ```
+8. Run 'node server.js' in terminal
+9. Open https://<localhost/ipaddress>:8443/# to view the map.
