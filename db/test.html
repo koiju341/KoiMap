@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Webpage description goes here" />
+  <meta charset="utf-8">
+  <style>
+    [style^=--rating]::after {
+    content: "★★★★★";
+    font-size: 2em;
+    white-space: nowrap;
+    background: linear-gradient(90deg, #fb0 calc(var(--rating) * 20%), #ddd calc(var(--rating) * 20%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #0000;
+}
+</style>
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="x">ABC</div>
+
+<script>
+ 
+var span = document.createElement('span')
+span.setAttribute('style', '--rating:4.2')
+
+document.getElementById('x').appendChild(span)
+</script>
+
+</body>
+</html>

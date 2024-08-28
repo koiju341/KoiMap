@@ -1,0 +1,233 @@
+#map {
+  position: absolute;
+
+  width: 99.5%;
+  height: 99%;
+  z-index: -1;
+}
+
+
+
+
+#search_result .link {
+
+  text-align: left;
+  position: relative;
+  margin: 10px;
+  background: none;
+  border: none;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  display: block;
+
+}
+
+#search_result .link:hover {
+  color: #1e2beb;
+  text-decoration: underline;
+}
+
+#history .link {
+
+  text-align: left;
+  position: relative;
+  margin: 10px;
+  background: none;
+  border: none;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  display: block;
+
+}
+
+#history .link:hover {
+  color: #1e2beb;
+  text-decoration: underline;
+}
+
+#saved .link {
+
+  text-align: left;
+  position: relative;
+  margin: 10px;
+  background: none;
+  border: none;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  display: block;
+
+}
+
+#saved .link:hover {
+  color: #1e2beb;
+  text-decoration: underline;
+}
+
+#dropbtn {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#dropbtn2 {
+  margin-top: 10px;
+
+}
+
+.leaflet-sidebar-header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+#topbt {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+  display: block;
+  height: 60px;
+  width: auto;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: none;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  display: none;
+}
+
+.searchTerm:focus {
+  color: #00B4CC;
+  display: none;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  width: 10%;
+  position: absolute;
+  top: 4%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+
+}
+
+[style^=--rating]::after {
+  content: "★★★★★";
+  font-size: 1.5em;
+  margin-left: 15px;
+  white-space: nowrap;
+  background: linear-gradient(90deg, #fb0 calc(var(--rating) * 20%), #ddd calc(var(--rating) * 20%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #0000;
+}
+
+.btt {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
+.bt {
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #1a73e8;
+}
+
+.bt:hover {
+  background-color: #f2f2f2;
+  color: #00B4CC;
+}
+
+.txt {
+  color: #1a73e8;
+  margin: auto;
+
+}
+
+
+#place {
+  margin-top: 14px;
+  font-size: 22px;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+}
+
+.tabs {
+  display: flex;
+  min-height: 40px;
+
+}
+
+.icons {
+  font-size: 28px;
+  margin: auto;
+  color: #1a73e8;
+}
+
+.tabs:hover {
+  background-color: #f2f2f2;
+
+}
+
+.tabs-info {
+  margin: auto;
+  margin-left: 15px;
+  flex: 1 0 80%;
+  font-size: 14px;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+
+}
+
+#address {
+  margin-top: 40px;
+}
+
+#icon1 {
+  margin: auto;
+  margin-left: 25.5px;
+}
+
+#icon2 {
+  margin: auto;
+  margin-left: 18.5px;
+}
+
+#icon3 {
+  margin: auto;
+  margin-left: 18.5px;
+}
